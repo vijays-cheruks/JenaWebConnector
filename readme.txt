@@ -1,0 +1,1 @@
+﻿JenaWebConnector is a web application that embeds the JenaConnector jar along with all the necessary Jena core libs. 

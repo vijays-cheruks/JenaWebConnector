@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <context-param>
+        <param-name>log4jFileName</param-name>
+        <param-value>${user.dir}\webapps\JenaWebConnector\WEB-INF\classes\log4j.properties</param-value>
+    </context-param>
+    <listener>
+        <listener-class>connector.StartupListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>action</servlet-name>
+        <servlet-class>connector.Action</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>action</servlet-name>
+        <url-pattern>/jena</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

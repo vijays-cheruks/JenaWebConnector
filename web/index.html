@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SDB Import</title>
+  </head>
+  <body>
+    <form action="jena" method="POST">
+      <table cellpadding="5" cellspacing="5">        
+        <tr><td>Database</td><td><input name="dbname" /></td></tr>
+        <tr><td>File name</td><td><input name="filename" /></td></tr>
+        <tr><td>File type</td><td><input name="filetype" /></td></tr>
+      </table>
+      <button style="margin:25px;width:100px" name="Import" onclick="document.forms[0].submit()">Import</button>
+      <input type="hidden" name="dbuser" value="root" />
+      <input type="hidden" name="dbkey" value="password" />
+    </form>
+  </body>
+</html>
